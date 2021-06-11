@@ -1,0 +1,295 @@
+@charset "utf-8";
+/* CSS Document */
+
+.btn
+{
+	z-index:1;
+	position:relative;
+	display:inline-block;
+	padding: 8px 20px;
+	background: #000;
+	margin-top: 15px;
+	text-decoration: none;
+	font-weight: 400;
+	border-radius: 20px;
+	color: #FFF;
+	transition: 0.5s;
+	box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}	
+
+.contentBx3
+{
+    min-width: 50%;
+	position:relative;
+	width: 100%;
+	text-align: center;
+	padding: 10px;
+	z-index:1;
+	background: url("../Justice/Blindspot1.jpg");
+	background-size: cover;
+}
+
+.titleText3
+{
+   font-weight: 600;
+   color:#FFF;
+   font-size: 2em;
+   margin-bottom: 10px;
+	background:url("../Justice/Beauty3.jpg");
+	background-size: cover;
+   
+}
+
+.text3
+{
+   color:#FFF;
+   font-size: 1em;	
+   
+}
+.joke .card
+{
+	position:absolute;
+	top:50%;
+	left:50%;
+	width: 300px;
+	height: 640px;
+	margin-top: 5px;
+	margin-bottom:10px;
+	margin-left: -360px;
+	background: #111;
+	transform: translate(-50%,-50%);
+	overflow: hidden;
+	box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+}
+
+
+.joke .card .poster
+{
+	position:relative;
+	overflow:hidden;
+	
+}
+
+.joke .card .poster:before
+{
+	content: '';
+	position:absolute;
+	left: 0;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	transition: 0.5s;
+	background: linear-gradient(-15deg, #000 25%, transparent);	
+	z-index: 1;
+	border-bottom:-20px;
+}
+
+.joke .card:hover .poster:before
+{
+	bottom: 0;
+}
+
+
+.joke .card .poster img
+{
+	width: 100%;
+}
+
+.joke .card:hover .details
+{
+	bottom: 0;
+}
+
+.joke .details
+{
+	position: absolute;
+	padding: 20px;
+	width: 100%;
+	height: 75%;
+	left: 0;
+	bottom: -330px;
+	box-sizing:border-box;
+	transition: 0.5s;
+	z-index: 2;
+}
+
+
+.joke .details h2
+{
+	color:#fff;
+	margin: 0;
+	padding: 0;
+	font-size: 20px;
+}
+
+.joke .details h2 span
+{
+	font-size: 14px;
+	color:#ff9800;	
+}
+
+.joke .rating
+{
+	position: relative;
+	padding: 5px 0;	
+}
+
+.joke .rating .fa
+{	
+	color: #F7F406;
+	margin-right: 2px;
+	font-size: 16px;
+	
+}
+
+.joke .rating span
+{
+	color: #FFF;
+	padding: 0 5px;
+	color: #fff;
+	border-radius: 4px;
+	display:inline-block;
+}
+
+.joke .tags
+{
+	position:relative;
+	margin-top: 5px;
+}
+
+
+.joke .tags span
+{
+	padding: 2px 5px;	
+	margin-right: 2px;
+}
+
+
+.joke .tags span.Action
+{
+	background: #7206f7;
+	font-family:Verdana, Geneva, sans-serif;	
+	font-weight:300;
+}
+
+.joke .tags span.Mystery
+{
+	background: #f70661;
+	font-family:Verdana, Geneva, sans-serif;
+	font-weight:300;		
+}
+
+.joke .card:hover .poster img
+{
+	filter: blur(5px);
+	transform:translateY(-50px);
+	}
+.joke .info
+{
+	color:#FFF;	
+}
+
+.joke .info p
+{
+	margin: 15px 0 10px;	
+}
+
+.joke .star
+{
+	position: relative;	
+}
+
+.joke .star
+{
+	margin: 0;
+	padding: 0;
+	font-size: 20px;
+	color: #F7f406;
+}
+
+.joke .star ul
+{
+	margin: 10px 0 0;
+	padding: 0;
+	display: flex;	
+	border-radius: 12px;
+}
+
+.joke .star ul li
+{
+	list-style: none;
+	width: 40px;	
+	height: 40px;
+	background: #FFF;
+	border-radius: 20px;
+	overflow: hidden;
+	margin-right: 6px;
+	border: 2px solid #FFF;
+}
+
+ .joke .star ul li img
+{
+	width: 100%;	
+}
+
+.player
+{
+	
+	position: relative;
+	width: 250px;
+	margin: 20px;
+	background:#f1f3f4;
+	box-shadow: 0 50px 80px rgba(0,0,0,0.25);
+	left: 55%;
+	top:10px;
+	z-index: 10;
+}
+
+.player .imgBx2
+{
+	position:relative;
+	width: 100%;
+	height: 280px;
+	
+}
+
+
+.player .imgBx2 img
+{
+	position:relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit:cover;
+}
+
+.player audio
+{
+	width: 100%;
+	outline: none;
+}
+
+
+
+@media (max-width: 991px)
+{
+	
+	.joke .card
+	{
+	position:relative;
+	top:50%;
+	left:50%;
+	width: 300px;
+	height: 535px;
+	margin-top: 300px;
+	margin-left: 10px;
+	}
+	
+	.player
+{
+	
+	left: 0;
+	top:0;
+}
+}
